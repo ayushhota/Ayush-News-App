@@ -49,7 +49,7 @@ export default class App extends Component {  // to generate this snippet we use
   render() {
     return (
       <div>
-        <Router>
+        <Router basename='Ayush-News-App'>
           <Navbar />
 
           {/* ******React 38****** */}
@@ -59,18 +59,18 @@ export default class App extends Component {  // to generate this snippet we use
             progress={this.state.progress}
           />
 
-          <Routes>
-            <Route exact path='/' element={<News setProgress={this.setProgress} key="general" pageSize={12} country="in" category='General' />}></Route>
-            <Route exact path='/business' element={<News setProgress={this.setProgress} key="business" pageSize={12} country="in" category='Business' />}></Route>
-            <Route exact path='/entertainment' element={<News setProgress={this.setProgress} key="entertainment" pageSize={12} country="in" category='Entertainment' />}></Route>
-            <Route exact path='/general' element={<News setProgress={this.setProgress} key="general" pageSize={12} country="in" category='General' />}></Route>
-            <Route exact path='/health' element={<News setProgress={this.setProgress} key="health" pageSize={12} country="in" category='Health' />}></Route>
-            <Route exact path='/science' element={<News setProgress={this.setProgress} key="science" pageSize={12} country="in" category='Science' />}></Route>
-            <Route exact path='/sports' element={<News setProgress={this.setProgress} key="sports" pageSize={12} country="in" category='Sports' />}></Route>
-            <Route exact path='/technology' element={<News setProgress={this.setProgress} key="technology" pageSize={12} country="in" category='Technology' />}></Route>
-          </Routes>
+            <Routes>
+              <Route exact path='/Ayush-News-App' element={<News setProgress={this.setProgress} key="general" pageSize={12} country="in" category='General' />}></Route>
+              <Route exact path='/business' element={<News setProgress={this.setProgress} key="business" pageSize={12} country="in" category='Business' />}></Route>
+              <Route exact path='/entertainment' element={<News setProgress={this.setProgress} key="entertainment" pageSize={12} country="in" category='Entertainment' />}></Route>
+              <Route exact path='/general' element={<News setProgress={this.setProgress} key="general" pageSize={12} country="in" category='General' />}></Route>
+              <Route exact path='/health' element={<News setProgress={this.setProgress} key="health" pageSize={12} country="in" category='Health' />}></Route>
+              <Route exact path='/science' element={<News setProgress={this.setProgress} key="science" pageSize={12} country="in" category='Science' />}></Route>
+              <Route exact path='/sports' element={<News setProgress={this.setProgress} key="sports" pageSize={12} country="in" category='Sports' />}></Route>
+              <Route exact path='/technology' element={<News setProgress={this.setProgress} key="technology" pageSize={12} country="in" category='Technology' />}></Route>
+            </Routes>
         </Router>
-      </div>
+      </div >
     )
   }
 }
