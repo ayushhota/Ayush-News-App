@@ -49,7 +49,7 @@ export default class App extends Component {  // to generate this snippet we use
   render() {
     return (
       <div>
-        <Router basename='Ayush-News-App'>
+        <Router basename='/Ayush-News-App'>
           <Navbar />
 
           {/* ******React 38****** */}
